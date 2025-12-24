@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "svghgen"
+version = "1.0.0"
+description = "Dynamic SVG Header Generator using figlet/toilet fonts"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+svghgen = "svg_gen:cli_main"
