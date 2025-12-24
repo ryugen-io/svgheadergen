@@ -4,12 +4,12 @@ A high-performance SVG header generator built in Mojo that converts ASCII art in
 
 ## Features
 
-- 🚀 **Blazing Fast**: Written in Mojo for maximum performance
-- 🎨 **Gradient Support**: Built-in color gradient presets
-- 🔤 **Multiple Fonts**: Works with figlet/toilet fonts
-- 🎯 **Two Rendering Modes**: Pixel mode for simple fonts, text mode for Unicode
-- 📦 **Zero Dependencies**: Standalone binary (when compiled)
-- 🐍 **Python Fallback**: Includes Python implementation for compatibility
+- **Blazing Fast**: Written in Mojo for maximum performance
+- **Gradient Support**: Built-in color gradient presets
+- **Multiple Fonts**: Works with figlet/toilet fonts
+- **Two Rendering Modes**: Pixel mode for simple fonts, text mode for Unicode
+- **Zero Dependencies**: Standalone binary (when compiled)
+- **Python Fallback**: Includes Python implementation for compatibility
 
 ## Installation
 
