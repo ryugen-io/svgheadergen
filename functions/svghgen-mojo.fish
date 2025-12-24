@@ -1,5 +1,5 @@
 function svghgen-mojo --description 'SVG header generator (Mojo/pixi)'
-    set -l project_dir (dirname (status --current-filename))/..
+    set -l project_dir ~/code/github.com/ryugen-io/svghgen
 
     # Check if pixi is available
     if not command -v pixi &>/dev/null
@@ -8,6 +8,12 @@ function svghgen-mojo --description 'SVG header generator (Mojo/pixi)'
         return 1
     end
 
+    # Check if project directory exists
+    if not test -d $project_dir
+        echo "Error: svghgen directory not found at $project_dir"
+        return 1
+    end
+
     # Run via pixi in the project directory
-    pixi run -C $project_dir mojo svg_gen.mojo $argv
+    cd $project_dir && pixi run mojo svg_gen.mojo $argv
 end
