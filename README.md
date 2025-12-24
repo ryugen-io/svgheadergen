@@ -1,15 +1,15 @@
 # SVG Header Generator
 
-A high-performance SVG header generator built in Mojo that converts ASCII art into pixel-perfect SVG graphics with customizable gradient fills.
+SVG header generator built in Mojo that converts ASCII art into SVG graphics with customizable gradient fills.
 
 ## Features
 
-- **Blazing Fast**: Written in Mojo for maximum performance
-- **Gradient Support**: Built-in color gradient presets
-- **Multiple Fonts**: Works with figlet/toilet fonts
-- **Two Rendering Modes**: Pixel mode for simple fonts, text mode for Unicode
-- **Zero Dependencies**: Standalone binary (when compiled)
-- **Python Fallback**: Includes Python implementation for compatibility
+- Written in Mojo for performance
+- Built-in color gradient presets
+- Works with figlet/toilet fonts
+- Two rendering modes: pixel mode and text mode
+- Standalone binary when compiled
+- Includes Python implementation for compatibility
 
 ## Installation
 
@@ -123,13 +123,11 @@ Options:
 
 ## Performance
 
-The Mojo implementation is significantly faster than the Python version:
+Run benchmarks to compare Mojo and Python implementations:
 
 ```bash
 just benchmark
 ```
-
-Typical results show ~10-100x speedup for the Mojo implementation depending on the operation.
 
 ## Development
 
